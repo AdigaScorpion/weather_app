@@ -82,8 +82,8 @@ class CurrentWeatherWidget extends GetView {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           SizedBox(
-            height: 120,
-            width: 120,
+            height: 150,
+            width: 150,
             child: Image.asset(
                 "assets/images/${weatherDataCurrent.current.weather![0].icon}.png",
                 height: 80,
@@ -145,7 +145,7 @@ class CurrentWeatherWidget extends GetView {
 
   Widget comfortLevel() {
     return SizedBox(
-      height: 100,
+      height: 175,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
@@ -157,8 +157,8 @@ class CurrentWeatherWidget extends GetView {
                 infoProperties: InfoProperties(
                     bottomLabelText: " Humidity ",
                     bottomLabelStyle:
-                        const TextStyle(color: CustomColors.textColorBlack)),
-                size: 90,
+                        const TextStyle(color: CustomColors.textColorBlack,fontSize: 20)),
+                size: 140,
                 animationEnabled: true,
                 customWidths: CustomSliderWidths(
                     trackWidth: 9, progressBarWidth: 12, handlerSize: 0),
@@ -177,8 +177,8 @@ class CurrentWeatherWidget extends GetView {
                 infoProperties: InfoProperties(
                     bottomLabelText: "Rain",
                     bottomLabelStyle:
-                        const TextStyle(color: CustomColors.textColorBlack)),
-                size: 90,
+                        const TextStyle(color: CustomColors.textColorBlack,fontSize: 20)),
+                size: 140,
                 animationEnabled: true,
                 customWidths: CustomSliderWidths(
                     trackWidth: 9, progressBarWidth: 12, handlerSize: 0),

@@ -43,8 +43,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     flex: 2,
                     child: Padding(
                       padding:
-                          const EdgeInsets.only(top: 154, right: 5, left: 5),
+                          const EdgeInsets.only(top: 170, right: 5, left: 5),
                       child: ListView(children: <Widget>[
+                        const SizedBox(height: 15),
                         DailyDataForecast(
                             weatherDataDaily:
                                 globalController.getData().getDailyWeather()),
